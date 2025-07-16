@@ -1,6 +1,6 @@
 # React CI/CD Demo
 
-This is a minimal React + Vite project designed to demonstrate a CI/CD pipeline setup. It includes automatic deployments and minimal code for fast feedback and ease of understanding.
+This is a minimal React + Vite project designed to demonstrate a CI/CD pipeline setup.
 
 ---
 
