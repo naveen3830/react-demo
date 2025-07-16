@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/naveen3830/react-demo/compare/v1.0.0...v1.0.1) (2025-07-16)
+
+
+### Bug Fixes
+
+* remove unncessary description ([45fc94c](https://github.com/naveen3830/react-demo/commit/45fc94caea67c4363463041d8f3a92f26a0f8379))
+
 # 1.0.0 (2025-07-16)
 
 
