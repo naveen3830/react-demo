@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@theme {
+@theme{
   /* Fonts */
   --font-body: "system-ui", Avenir, Helvetica, Arial, sans-serif;
 }
