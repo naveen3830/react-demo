@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/naveen3830/react-demo/compare/v1.0.1...v1.0.2) (2025-07-18)
+
+
+### Bug Fixes
+
+* add PR Template ([7d261c1](https://github.com/naveen3830/react-demo/commit/7d261c17c6bd7f6d1fbc6f9a5aded266ac9c2240))
+
 ## [1.0.1](https://github.com/naveen3830/react-demo/compare/v1.0.0...v1.0.1) (2025-07-16)
 
 
