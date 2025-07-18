@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/naveen3830/react-demo/compare/v1.1.0...v1.2.0) (2025-07-18)
+
+
+### Features
+
+* add versioning to deployed version ([96cf0d3](https://github.com/naveen3830/react-demo/commit/96cf0d3b5347eb48e2281739749ea1e59c78438f))
+
 # [1.1.0](https://github.com/naveen3830/react-demo/compare/v1.0.2...v1.1.0) (2025-07-18)
 
 
