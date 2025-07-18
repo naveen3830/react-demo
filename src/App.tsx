@@ -32,6 +32,7 @@ const App = () => {
         <h1 className="text-4xl font-bold mb-8">CI/CD React Demo</h1>
         <p className="text-lg mb-6">{ loading ? "Loading..." : joke }</p>
         <p className="text-sm">Last Deployed: {deployTime}</p>
+        <p className="text-xs mt-2">Version: {__APP_VERSION__}</p>
     </div>
   );
 };
