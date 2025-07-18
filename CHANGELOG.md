@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/naveen3830/react-demo/compare/v1.0.2...v1.1.0) (2025-07-18)
+
+
+### Features
+
+* add version name to the app ([375c79d](https://github.com/naveen3830/react-demo/commit/375c79dbcd22de2f292c733043f8c49e299a9b87))
+
 ## [1.0.2](https://github.com/naveen3830/react-demo/compare/v1.0.1...v1.0.2) (2025-07-18)
 
 
