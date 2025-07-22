@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/naveen3830/react-demo/compare/v1.2.0...v1.3.0) (2025-07-22)
+
+
+### Features
+
+* test release automation ([930bdc2](https://github.com/naveen3830/react-demo/commit/930bdc28d7f85dba94aa374fc7bbf42f68487b61))
+
 # [1.2.0](https://github.com/naveen3830/react-demo/compare/v1.1.0...v1.2.0) (2025-07-18)
 
 
