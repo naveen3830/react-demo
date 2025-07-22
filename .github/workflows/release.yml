@@ -1,64 +1,34 @@
-name: Release & Deploy
+name: Deploy to Vercel
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main  # Replace with your main branch name if different
 
 jobs:
-  release:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write        # tag & push
-      issues: write          # create release-issue on failure
-    outputs:
-      new-release-published: ${{ steps.semantic.outputs.new-release-published }}
-      new-release-version: ${{ steps.semantic.outputs.new-release-version }}
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-      
-      - run: npm ci
-      
-      - name: Semantic Release
-        id: semantic
-        run: npx semantic-release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-  deploy:
-    name: Deploy to Vercel
-    needs: release
-    # Only deploy if a new release was created
-    if: needs.release.outputs.new-release-published == 'true'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'  # Replace with your project's required Node.js version
+        cache: npm
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20  # Match the Node version from release job
-          cache: npm
+    - name: Install dependencies
+      run: npm ci
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Build project
+      run: npm run build  # Replace with your build command if different
 
-      - name: Build project
-        run: npm run build  # Add your build command here
-
-      - name: Install Vercel CLI
-        run: npm install -g vercel
-
-      - name: Deploy to Vercel
-        env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-        run: vercel --prod --confirm
+    - name: Deploy to Vercel
+      uses: amondnet/vercel-action@v20
+      with:
+        vercel-token: ${{ secrets.VERCEL_TOKEN }}
+        vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+        vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+        vercel-args: '--prod'  # Deploy to production
