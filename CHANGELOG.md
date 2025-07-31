@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/naveen3830/react-demo/compare/v1.3.0...v1.4.0) (2025-07-31)
+
+
+### Features
+
+* add deploy.yml to automate verecl deployment ([42b56b3](https://github.com/naveen3830/react-demo/commit/42b56b30ee5f8e141c2c0ad0a7019e03264336f8))
+* add vercel deployment code to release.yml ([fe10f69](https://github.com/naveen3830/react-demo/commit/fe10f6954971eec2fe5f256c526dd39ceb3a45cd))
+
 # [1.3.0](https://github.com/naveen3830/react-demo/compare/v1.2.0...v1.3.0) (2025-07-22)
 
 
