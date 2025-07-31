@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/naveen3830/react-demo/compare/v1.4.0...v1.4.1) (2025-07-31)
+
+
+### Bug Fixes
+
+* resolve vercel deployment issues ([e4693b8](https://github.com/naveen3830/react-demo/commit/e4693b8bf98e000cb57a2e5d06ea5bdfe8031a6b))
+
 # [1.4.0](https://github.com/naveen3830/react-demo/compare/v1.3.0...v1.4.0) (2025-07-31)
 
 
